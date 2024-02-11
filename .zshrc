@@ -78,3 +78,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # My Aliases
 alias ls='eza -ha --icons=auto --sort=name --group-directories-first' # long list all
+
+# Shortcuts
+alias tsto='cd ~/git/others/extensions/save-to-obsidian/'
+alias toldsto='cd ~/git/others/extensions/save-to-obsidian-old/'
+
+alias tdndepressed='cd ~/Obsidian/DnDepressed/'
+alias tconfig='cd ~/git/others/linux-configs/'
