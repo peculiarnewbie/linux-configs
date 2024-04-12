@@ -85,3 +85,8 @@ alias toldsto='cd ~/git/others/extensions/save-to-obsidian-old/'
 
 alias tdndepressed='cd ~/Obsidian/DnDepressed/'
 alias tconfig='cd ~/git/others/linux-configs/'
+
+eval "$(zoxide init zsh)"
+
+# sst
+export PATH=/home/bolt/.sst/bin:$PATH
