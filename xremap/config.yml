@@ -1,12 +1,12 @@
 modmap:
   - name: my remaps
-    remap: 
+    remap:
       CapsLock:
         held: leftctrl
         alone: esc
         alone_timeout_millis: 150
       rightctrl:
-        held: [ctrl_l,super_l,alt_l]
+        held: [ctrl_l, super_l, alt_l]
         alone: rightctrl
         alone_timeout_millis: 200
         #device:

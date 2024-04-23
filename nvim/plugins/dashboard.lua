@@ -56,22 +56,11 @@ return {
 				center = {
 					{
 						icon = " ",
-						icon_hl = "Title",
-						desc = "Find File           ",
-						desc_hl = "String",
-						key = "b",
-						keymap = "SPC f f",
-						key_hl = "Number",
-						key_format = " %s", -- remove default surrounding `[]`
-						action = ":Neotree",
-					},
-					{
-						icon = " ",
-						desc = "Find Dotfiles",
+						desc = "configs",
 						key = "f",
-						keymap = "SPC f d",
+						keymap = "f",
 						key_format = " %s", -- remove default surrounding `[]`
-						action = "lua print(3)",
+						action = ":Neotree ~/git/others/linux-configs",
 					},
 				},
 				footer = {}, --your footer
