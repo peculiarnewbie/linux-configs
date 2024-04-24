@@ -5,6 +5,7 @@
 return {
 	vim.filetype.add({
 		extension = {
+			svelte = "svelte",
 			astro = "astro",
 		},
 	}),
