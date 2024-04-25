@@ -44,6 +44,16 @@ function in {
     fi
 }
 
+function yy {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+
 # Helpful aliases
 alias  l='eza -lh  --icons=auto' # long list
 alias le='eza -1   --icons=auto' # short list
@@ -75,6 +85,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export EDITOR='nvim'
 
 # My Aliases
 alias ls='eza -ha --icons=auto --sort=name --group-directories-first' # long list all
