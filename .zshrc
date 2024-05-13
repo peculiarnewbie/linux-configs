@@ -102,3 +102,9 @@ eval "$(zoxide init zsh)"
 
 # sst
 export PATH=/home/bolt/.sst/bin:$PATH
+
+
+# custom keybinds
+
+bindkey "^J" down-line-or-beginning-search
+bindkey "^K" up-line-or-beginning-search

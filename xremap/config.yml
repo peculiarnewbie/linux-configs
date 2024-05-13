@@ -11,3 +11,7 @@ modmap:
         alone_timeout_millis: 200
         #device:
         #only: '/dev/input/event10'
+      tab:
+        held: [ctrl_l, super_l, alt_l]
+        alone: tab
+        alone_timeout_millis: 150
