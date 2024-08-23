@@ -108,3 +108,12 @@ export PATH=/home/bolt/.sst/bin:$PATH
 
 bindkey "^J" down-line-or-beginning-search
 bindkey "^K" up-line-or-beginning-search
+export PATH=$HOME/.local/bin:$PATH
+
+# pnpm
+export PNPM_HOME="/home/bolt/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
